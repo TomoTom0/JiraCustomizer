@@ -1,0 +1,34 @@
+{
+  "name": "Jira Customizer",
+  "author": "TomoTomo",
+  "version": "0.1",
+  "manifest_version": 3,
+  "icons": {
+    "16":"img/icon_jira-customizer@16.png",
+    "48":"img/icon_jira-customizer@48.png",
+    "128":"img/icon_jira-customizer@128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "https://*.com/*"
+      ],
+      "js": [
+        "js/async.min.js",
+        "script/main.js",
+        "script/functions.js"
+      ],
+      "css": [
+        "script/main.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage", "activeTab", "scripting", "tabs"
+  ],
+  "action":{
+    "default_popup": "script/popup.html"
+  },
+  "description": "Customize Jira layout"
+}
