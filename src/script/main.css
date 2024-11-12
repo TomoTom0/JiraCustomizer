@@ -1,29 +1,21 @@
-body.yt-jira .col-2 {
-    column-count: 2;
-}
-
-body.yt-jira .col-3 {
-    column-count: 3;
-}
-
-body.yt-jira .col-4 {
-    column-count: 4;
-}
-
-body.yt-jira .col-5 {
-    column-count: 5;
-}
-
-/* body.yt-jira div.ghx-backlog-group > div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable > div.ghx-issues.js-issue-list.ghx-has-issues {
-    column-count: 4;
-} */
-
+body.yt-jira.col-2 #ghx-content-group div.ghx-sprint-group,
+body.yt-jira.col-2 div.ghx-backlog-group > div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable > div.ghx-issues.js-issue-list.ghx-has-issues {
+  column-count: 2; }
+body.yt-jira.col-3 #ghx-content-group div.ghx-sprint-group,
+body.yt-jira.col-3 div.ghx-backlog-group > div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable > div.ghx-issues.js-issue-list.ghx-has-issues {
+  column-count: 3; }
+body.yt-jira.col-4 #ghx-content-group div.ghx-sprint-group,
+body.yt-jira.col-4 div.ghx-backlog-group > div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable > div.ghx-issues.js-issue-list.ghx-has-issues {
+  column-count: 4; }
+body.yt-jira.col-5 #ghx-content-group div.ghx-sprint-group,
+body.yt-jira.col-5 div.ghx-backlog-group > div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable > div.ghx-issues.js-issue-list.ghx-has-issues {
+  column-count: 5; }
 body.yt-jira div.ghx-sprint-info,
- body.yt-jira div.iic,
- body.yt-jira div.ghx-stat-total {
-    display: none;
-}
-
+body.yt-jira div.iic,
+body.yt-jira div.aui-item,
+body.yt-jira div.ghx-stat-total {
+  display: none; }
 body.yt-jira #announcement-banner {
-    display: none !important;
-}
+  display: none !important; }
+
+/*# sourceMappingURL=main.css.map */

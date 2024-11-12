@@ -24,8 +24,7 @@ window.onload = async function () {
     const stored_config = await getSyncStorage(["popup_config"]);
     let popup_config = Object.assign({cols: 4}, stored_config.popup_config || {});
     const input_cols = document.getElementById("cols");
-    input_cols.value = popup_config.cols;
-
+    input_cols.value = popup_config.cols;    
     // const div_result = document.getElementById("result");
     document.addEventListener('click', async function (e) {
         const flag_view = await getSyncStorage(["flag_view"]).then(res => res.flag_view);
@@ -34,7 +33,7 @@ window.onload = async function () {
             await setSyncStorage({popup_config: {cols: input_cols.value}, flag_view: !flag_view});
         } else if (e.target.id === "button_applyView") {
             await main_toggleView("on");
-            await setSyncStorage({popup_config: {cols: input_cols.value}});
+            await setSyncStorage({popup_config: {cols: input_cols.value}, flag_view: true});
         }
     });
 }

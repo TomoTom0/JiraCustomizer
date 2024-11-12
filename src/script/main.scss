@@ -1,0 +1,44 @@
+body.yt-jira {
+    &.col-2 {
+
+        #ghx-content-group div.ghx-sprint-group,
+        div.ghx-backlog-group>div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable>div.ghx-issues.js-issue-list.ghx-has-issues {
+            column-count: 2;
+        }
+    }
+
+    &.col-3 {
+
+        #ghx-content-group div.ghx-sprint-group,
+        div.ghx-backlog-group>div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable>div.ghx-issues.js-issue-list.ghx-has-issues {
+            column-count: 3;
+        }
+    }
+
+    &.col-4 {
+
+        #ghx-content-group div.ghx-sprint-group,
+        div.ghx-backlog-group>div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable>div.ghx-issues.js-issue-list.ghx-has-issues {
+            column-count: 4;
+        }
+    }
+
+    &.col-5 {
+
+        #ghx-content-group div.ghx-sprint-group,
+        div.ghx-backlog-group>div.ghx-backlog-container.ghx-open.ghx-everything-else.ui-droppable>div.ghx-issues.js-issue-list.ghx-has-issues {
+            column-count: 5;
+        }
+    }
+
+    div.ghx-sprint-info,
+    div.iic,
+    div.aui-item,
+    div.ghx-stat-total {
+        display: none;
+    }
+
+    #announcement-banner {
+        display: none !important;
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGQ;4JACsI;EAClI,YAAY,EAAE,CAAC;AAMnB;4JACsI;EAClI,YAAY,EAAE,CAAC;AAMnB;4JACsI;EAClI,YAAY,EAAE,CAAC;AAMnB;4JACsI;EAClI,YAAY,EAAE,CAAC;AAIvB;;;+BAGmB;EACf,OAAO,EAAE,IAAI;AAGjB,iCAAqB;EACjB,OAAO,EAAE,eAAe",
+"sources": ["src/script/main.scss"],
+"names": [],
+"file": "main.css"
+}
