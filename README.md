@@ -8,6 +8,8 @@ This chrome extension customize the Jira page layout.
 
 ## How to Install
 
+<img src="./img/tutorial_manually-install-chrome-extension.png" max-height="30vh" max-width="80vw">
+
 1. Download or Clone this repository, and unzip it if necessary.
    You can download the zip file by clicking the `Code` button on the top of this page and selecting `Download Zip`.
 2. Go to `chrome://extensions/`, and enable `Developer mode`.
