@@ -13,7 +13,8 @@ body.yt-jira.col-5 div.ghx-backlog-group > div.ghx-backlog-container.ghx-open.gh
 body.yt-jira div.ghx-sprint-info,
 body.yt-jira div.iic,
 body.yt-jira div.aui-item,
-body.yt-jira div.ghx-stat-total {
+body.yt-jira div.ghx-stat-total,
+body.yt-jira div.ghx-key {
   display: none; }
 body.yt-jira #announcement-banner {
   display: none !important; }

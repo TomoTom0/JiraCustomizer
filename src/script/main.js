@@ -3,10 +3,11 @@
 let JIRA_DOMAIN = null;
 
 const set_toggleView = async () => {
-    const stored_config = await getSyncStorage(["flag_view"]);
+    const stored_config = await getSyncStorage(["flag_view", "popup_config"]);
     let flag_view = stored_config.flag_view;
+    const popup_config = stored_config.popup_config || {};
     if (flag_view === undefined) flag_view = true;
-    if (flag_view) toggleView("on");
+    if (flag_view) toggleView("on", popup_config.cols);
 }
 
 //------------------------------------
@@ -52,6 +53,7 @@ window.onload = async () => {
 //------------------------------------
 //         #  on click
 const toggleView = async (mode = "toggle", cols = 4) => {
+    if (Number.isNaN(cols)) cols = 4;
     const usp = new URLSearchParams(location.search);
     if (usp.get("view").startsWith("planning")) {
         const checkInterval = setInterval(() => {
